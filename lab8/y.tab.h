@@ -54,8 +54,18 @@ extern int yydebug;
     YYEOF = 0,                     /* "end of file"  */
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
-    INTEGER = 258,                 /* INTEGER  */
-    VARIABLE = 259                 /* VARIABLE  */
+    RESTBODY = 258,                /* RESTBODY  */
+    WHILE = 259,                   /* WHILE  */
+    ID = 260,                      /* ID  */
+    NUMBER = 261,                  /* NUMBER  */
+    GE = 262,                      /* GE  */
+    LE = 263,                      /* LE  */
+    EQ = 264,                      /* EQ  */
+    NE = 265,                      /* NE  */
+    AND = 266,                     /* AND  */
+    OR = 267,                      /* OR  */
+    INC = 268,                     /* INC  */
+    DEC = 269                      /* DEC  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -64,8 +74,18 @@ extern int yydebug;
 #define YYEOF 0
 #define YYerror 256
 #define YYUNDEF 257
-#define INTEGER 258
-#define VARIABLE 259
+#define RESTBODY 258
+#define WHILE 259
+#define ID 260
+#define NUMBER 261
+#define GE 262
+#define LE 263
+#define EQ 264
+#define NE 265
+#define AND 266
+#define OR 267
+#define INC 268
+#define DEC 269
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED

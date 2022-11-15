@@ -727,7 +727,7 @@ case 1:
 YY_RULE_SETUP
 #line 9 "calc.l"
 {
-	yylval = atoi(yytext);
+	yylval.val = atoi(yytext);
 	return INTEGER;
 }
 	YY_BREAK

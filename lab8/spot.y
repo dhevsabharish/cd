@@ -1,8 +1,8 @@
 %{
 #include<stdio.h>
 #include<stdlib.h>
-int yylex();
-FILE *yyin;
+extern int yylex();
+extern FILE *yyin;
 void yyerror(char *p) {
 fprintf(stderr, "%s\n", "while syntax error");
 }
